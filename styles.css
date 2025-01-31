@@ -1,0 +1,127 @@
+
+.container{
+    width: 100%;
+    max-width: 456px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255,186,205);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+button{
+    padding: 10px 20px;
+    padding-top: 20px;
+    background-color: #b5828c;
+    border-radius: 99px;
+    border: none;
+    min-width: 150px;
+    overflow: hidden;
+    font-size: 18px;
+    -webkit-box-shadow: 12px 5px 14px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Borel", serif;
+}
+.buttonYes{
+
+    background-color: #77b254;
+}
+.buttonNo{
+    background-color: #d2665a;
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+body{
+    font-size: 24px;
+    
+}
+img{
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.gif1, .gif3{
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+.gif2{
+    width: 120px;
+    aspect-ratio: 1/1;
+}
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+.wrapper, .wrapper2, .wrapper3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: 100dvh;
+    width: 100vw;
+}
+.wrapper.hidden{
+    transform: translateY(-100dvh);
+    transition: all 1s ease;
+    display: hidden;
+}
+.textbox{
+    width: 85%;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 99px;
+    text-align: center;
+    font-family: "Borel", serif;
+}
+.scroll-track.started{
+    transform: translateY(-100dvh);
+}
+.scroll-track{
+    transition: all 2s ease;
+}
+.wrapper3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,186,205);
+    z-index: 1;
+    transform: translateY(-100dvh);
+    transition: all 1s ease-in-out;
+}
+.credits{
+    font-size: 18px;
+    margin-bottom: -30px;
+}
+
+@keyframes exitAnimation {
+
+    0%{
+        transform: translateY(0dvh);
+    }
+    10%{
+        transform: translateY(10dvh);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+
+}
